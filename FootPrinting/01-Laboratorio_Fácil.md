@@ -7,9 +7,9 @@ Como primer punto tenemos que **enumerar** los puertos disponibles en la máquin
 nmap -p- -sS -Pn -n <IP> -oN ports
 ```
 
-- `**-p-**` Escanear todos los puertos.
+- **`-p-`** Escanear todos los puertos.
 - **`-sS`** Escaneo sigiloso.
-- `**-oN`** Exportar la evidencia en formato **‘Nmap’** (Tal cual como nos muestra por consola.
+- **`-oN`** Exportar la evidencia en formato **‘Nmap’** (Tal cual como nos muestra por consola.
 - **`-Pn`** Toma en cuenta que todos los **hosts** está en línea.
 - **`-n`** No realice **resolución DNS.**
 
@@ -65,7 +65,7 @@ Contenido del directorio **`.ssh`**
 
 ![ssh.PNG](./assets/Facil/08-ssh.png)
 
-Le cambiamos los permisos al archivo ******`id_rsa`** a ********600,******** con esto decimos que esta clave le pertenece únicamente a un usuario con lo cual evitaremos problemas al ******autenticarnos por ssh.******
+Le cambiamos los permisos al archivo **`id_rsa`** a **600**, con esto decimos que esta clave le pertenece únicamente a un usuario con lo cual evitaremos problemas al **autenticarnos por ssh.**
 
 ```bash
 chmod 600 id_rsa
