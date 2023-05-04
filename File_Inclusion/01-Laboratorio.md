@@ -19,5 +19,5 @@ Para leer el archivo `/etc/passwd` usaremos el siguiente payload `http://<IP>/in
 Para leer el contenido del archivo `flag.txt` usaremos el siguiente payload `http://<IP>/index.php?language=/../../../../../../../../../usr/share/flags/flag.txt`
 
 <p align="center">
-    <img src="/assets/01-Primero/03-flag.PNG">
+    <img src="./assets/01-Primero/03-flag.PNG">
 </p>
