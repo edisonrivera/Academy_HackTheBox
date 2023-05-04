@@ -13,7 +13,7 @@ El **payload** que usaremos será: `?languaje=data://text/plain;base64,PD9waHAgc
 Con el anterior **payload** podemos ejecutar comandos en la máquina víctima
 
 <p align="center">
-    <img src="/assets/04-Cuarto/02-Test.PNG">
+    <img src="./assets/04-Cuarto/02-Test.PNG">
 </p>
 
 ---
@@ -21,7 +21,7 @@ Con el anterior **payload** podemos ejecutar comandos en la máquina víctima
 El enunciado nos dice que el archivo que contiene la **flag** se encuentra en la raíz del sistem (`/`), así que listaremos el contenido existente en esa ruta. 👨‍💻
 
 <p align="center">
-    <img src="/assets/04-Cuarto/03-ls.PNG">
+    <img src="./assets/04-Cuarto/03-ls.PNG">
 </p>
 
 ---
@@ -29,5 +29,5 @@ El enunciado nos dice que el archivo que contiene la **flag** se encuentra en la
 Listamos el contenido del archivo con extensión `.txt`
 
 <p align="center">
-    <img src="/assets/04-Cuarto/04-flag.PNG">
+    <img src="./assets/04-Cuarto/04-flag.PNG">
 </p>

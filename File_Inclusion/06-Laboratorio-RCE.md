@@ -31,7 +31,7 @@ Subiremos el archivo en el apartado `Profile Settings`
 Para saber el **directorio** en el que se suben las imagenes veremos 
 
 <p align="center">
-    <img src="/assets/06-Sexto/02-network.PNG">
+    <img src="./assets/06-Sexto/02-network.PNG">
 </p>
 
 * Tenemos el **archivo .php** que se encarga de la subida de archivos.
@@ -43,7 +43,7 @@ Ahora, usaremos un `wrapper` para obtener el contenido del archivo `upload.php`
 * **URL** `http://<IP Web>:<Puerto>/index.php?language=php://filter/read=convert.base64-encode/resource=upload.php`
 
 <p align="center">
-    <img src="/assets/06-Sexto/03-data.PNG">
+    <img src="./assets/06-Sexto/03-data.PNG">
 </p>
 
 ---
@@ -55,7 +55,7 @@ echo "[Base64 Data]" | base64 -d;echo
 ```
 
 <p align="center">
-    <img src="/assets/06-Sexto/04-folder.PNG">
+    <img src="./assets/06-Sexto/04-folder.PNG">
 </p>
 
 * Sabemos que el directorio es `./profile_images/`
@@ -66,7 +66,7 @@ Accedemos a la imagen ubicada en ese directorio y listamos el contenido de la ra
 * **URL** `http://<IP Web>:<Puerto>/index.php?language=php://filter/read=convert.base64-encode/resource=./profile_images/shell.gif&cmd=ls /`
 
 <p align="center">
-    <img src="/assets/06-Sexto/05-flag.PNG">
+    <img src="./assets/06-Sexto/05-flag.PNG">
 </p>
 
 ---
@@ -74,5 +74,5 @@ Accedemos a la imagen ubicada en ese directorio y listamos el contenido de la ra
 Por último, leemos el contenido del archivo anterior
 
 <p align="center">
-    <img src="/assets/06-Sexto/06-file.PNG">
+    <img src="./assets/06-Sexto/06-file.PNG">
 </p>

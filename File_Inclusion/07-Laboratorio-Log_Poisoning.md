@@ -12,7 +12,7 @@ El laboratorio que vulneraremos es
 Cambiamos la cabecera **`User-Agent`** con `<?php system('pwd'); ?>`
 
 <p align="center">
-    <img src="/assets/07-Septimo/02-Request.PNG">
+    <img src="./assets/07-Septimo/02-Request.PNG">
 </p>
 
 * Inyectamos el código **PHP** para intentar ejecutarlo al leer el archivo del log
@@ -21,7 +21,7 @@ Cambiamos la cabecera **`User-Agent`** con `<?php system('pwd'); ?>`
 Leemos el archivo `/var/log/apache2/access.log` (Aquí se almacenan los logs del servidor web)
 
 <p align="center">
-    <img src="/assets/07-Septimo/03-pwd.PNG">
+    <img src="./assets/07-Septimo/03-pwd.PNG">
 </p>
 
 ---
@@ -29,13 +29,13 @@ Leemos el archivo `/var/log/apache2/access.log` (Aquí se almacenan los logs del
 Ahora listamos el contenido de la raiz `/`
 
 <p align="center">
-    <img src="/assets/07-Septimo/04-ls.PNG">
+    <img src="./assets/07-Septimo/04-ls.PNG">
 </p>
 
 Leemos nuevamente el archivo `/var/log/apache2/access.log`
 
 <p align="center">
-    <img src="/assets/07-Septimo/05-ls.PNG">
+    <img src="./assets/07-Septimo/05-ls.PNG">
 </p>
 
 ---
@@ -53,5 +53,5 @@ Por último leemos el archivo `flag`
 * **URL:** `http://<IP Web>/index.php?language=/var/lib/php/sessions/sess_<PHPSESSID>&cmd=cat /[Flag].txt`
 
 <p align="center">
-    <img src="/assets/07-Septimo/06-flag.PNG">
+    <img src="./assets/07-Septimo/06-flag.PNG">
 </p>

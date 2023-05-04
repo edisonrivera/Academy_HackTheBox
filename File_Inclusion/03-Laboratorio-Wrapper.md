@@ -15,7 +15,7 @@ wfuzz -c -t 200 --hc=404 -w /usr/share/seclists/Discovery/Web-Content/directory-
 **Output**
 
 <p align="center">
-    <img src="/assets/03-Tercero/02-Fuzz.PNG">
+    <img src="./assets/03-Tercero/02-Fuzz.PNG">
 </p>
 
 ---
@@ -25,7 +25,7 @@ Si colocamos literalmente esto `http://<IP>/configure.php` no nos mostrará el c
 * **URL** `http://<IP>/index.php?languaje=php://filter/read=convert.base46-encode/resource=configure`
 
 <p align="center">
-    <img src="/assets/03-Tercero/03-Content.PNG">
+    <img src="./assets/03-Tercero/03-Content.PNG">
 </p>
 
 ---
@@ -33,5 +33,5 @@ Si colocamos literalmente esto `http://<IP>/configure.php` no nos mostrará el c
 Ahora decodeamos el contenido con el comando `echo "[Data base64]" | base64 -d; echo`
 
 <p align="center">
-    <img src="/assets/03-Tercero/04-php.PNG">
+    <img src="./assets/03-Tercero/04-php.PNG">
 </p>

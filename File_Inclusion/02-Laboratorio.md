@@ -12,5 +12,5 @@ El payload que usaremos es: `....//....//....//`
 * **URL**: `http://<IP>/index.php?language=languages/....//....//....//....//....//flag.txt`
 
 <p align="center">
-    <img src="/assets/02-Segundo/02-flag.PNG">
+    <img src="./assets/02-Segundo/02-flag.PNG">
 </p>

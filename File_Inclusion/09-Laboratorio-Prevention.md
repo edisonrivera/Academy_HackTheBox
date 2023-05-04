@@ -7,7 +7,7 @@ find / -name php.ini 2>/dev/null
 ```
 
 <p align="center">
-    <img src="/assets/09-Noveno/01-php.PNG">
+    <img src="./assets/09-Noveno/01-php.PNG">
 </p>
 
 2. El comando `system()` se encuentra deshabilitado por razones de seguridad.
