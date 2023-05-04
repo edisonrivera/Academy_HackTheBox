@@ -2,7 +2,7 @@
 
 La página web que vulneraremos es:
 
-![Web.PNG](./assets/05-Quinto/01-web.PNG)
+![Web.PNG](./assets/05-Quinto/01-Web.PNG)
 
 * Vemos el **atributo** `?language=<Archivo>.php` en el cual podemos lograr un LFI y, en este caso, derivarlo a un `RCE` 👩‍💻
 
