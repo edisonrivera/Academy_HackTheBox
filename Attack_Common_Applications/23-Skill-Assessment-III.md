@@ -19,7 +19,7 @@
 * Movemos el **comprimido** al escritorio, lo descomprimimos y ejecutar **`dnSpy.exe`**
 ---
 4. Una vez abrimos **`dnSpy`** analizamos el archivo **`MultimasterAPI.dll`**, el archivo en el que se encuentran **`harcodeadas`** las credenciales de **MSSQL** es
-* **`MultimasteAPI.dll -> MultimasteAPI.Controllers -> ColleagueControllers -> GetColleagues`**
+* **`MultimasterAPI.dll -> MultimasterAPI.Controllers -> ColleagueControllers -> GetColleagues`**
 
 * **GetColleagues**
 
